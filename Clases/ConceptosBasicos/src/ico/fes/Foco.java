@@ -10,24 +10,23 @@ package ico.fes;
  * @author dannapaola
  */
 public class Foco {
-    
+
     //Atributos:
     private String color;
     private String tipo;
     private int tamano;
-    
+
     // Constructores:
     public Foco() {
     }
-    
+
     public Foco(String color, String tipo, int tamano) {
         this.color = color;
         this.tipo = tipo;
         this.tamano = tamano;
     }
-    
-    //Metodos
 
+    // Metodos de acceso:
     public String getColor() {
         return color;
     }
@@ -51,8 +50,12 @@ public class Foco {
     public void setTamano(int tamano) {
         this.tamano = tamano;
     }
+
+    @Override
+    public String toString() {
+        return "Foco{" + "color=" + color + ", tipo=" + tipo + ", tamano=" + tamano + '}';
+    }
     
-   
     
-    
+
 }
